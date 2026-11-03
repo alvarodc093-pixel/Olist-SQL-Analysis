@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  sql:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r requirements.txt
+      - name: Tests de la lógica SQL (mini dataset)
+        run: pytest -q tests/test_logica_sql.py
+      - name: Descargar el dataset de Olist
+        run: python descargar_datos.py
+      - name: Ejecutar todas las consultas
+        run: python ejecutar.py
+      - name: Tests de coherencia con los datos reales
+        run: pytest -q tests/test_datos_reales.py

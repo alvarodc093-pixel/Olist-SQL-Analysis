@@ -1,0 +1,5 @@
+cuartil,grupo,vendedores,pedidos,ingresos,pct_ingresos,mediana_pedidos_vendedor,nota_media,pct_pedidos_tarde
+1,Top 25 %,758,81819,11691900.23,86.93,53.5,4.09,7.1
+2,25-50 %,757,11821,1317602.63,9.8,11.0,4.14,7.2
+3,50-75 %,757,4192,360541.15,2.68,4.0,4.16,6.7
+4,Último 25 %,757,1413,79485.67,0.59,1.0,4.0,7.1

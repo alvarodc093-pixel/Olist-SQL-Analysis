@@ -1,0 +1,5 @@
+tipo_pago,pedidos,pct_pedidos,ticket_medio,cuotas_medias,pct_6_o_mas_cuotas,ticket_medio_1_cuota,ticket_medio_6_o_mas_cuotas
+credit_card,73888,75.47,166.55,3.55,21.4,100.83,304.49
+boleto,19477,19.89,144.65,1.0,0.0,144.65,
+voucher,3028,3.09,114.92,1.0,0.0,114.92,
+debit_card,1512,1.54,140.33,1.0,0.0,140.33,

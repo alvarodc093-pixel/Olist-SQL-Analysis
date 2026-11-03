@@ -1,0 +1,14 @@
+comprobacion,valor,nota
+Pedidos duplicados (order_id),0,Debe ser 0
+Items cuyo pedido no existe,0,Debe ser 0 (integridad referencial)
+Pedidos sin ningún item,775,Casi todos cancelados o sin stock: se excluyen
+Pedidos sin pago registrado,1,Se mantienen: el importe sale de los items
+Productos sin categoría,610,Se agrupan como sin_categoria
+Pedidos entregados sin fecha de entrega,8,Se quedan fuera del análisis de plazos
+Entregas anteriores a la compra,0,Debe ser 0
+Pedidos con más de una review,547,Me quedo con la última
+Pedidos donde pago y productos+flete difieren > 1 BRL,1021,Vales e intereses de cuotas: uso productos+flete como GMV
+customer_id distintos,99441,Uno por pedido: no sirve para contar clientes
+customer_unique_id distintos,96096,Clientes reales
+Filas si se unen items y pagos sin agregar,117601,Fan-out: por eso se agrega por pedido antes de unir
+Pedidos en la base de análisis,97905,"2017-01 a 2018-08, sin cancelados ni sin stock"
